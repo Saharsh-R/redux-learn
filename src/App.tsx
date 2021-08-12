@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
 import LearnCounter from './eggheadLearn/counter';
+import LearnCounterScratch from './eggheadLearn/counterScratch';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         {/* <Counter /> */}
         
         <LearnCounter/>
+        <LearnCounterScratch/>
 
         <hr />
         <span>
