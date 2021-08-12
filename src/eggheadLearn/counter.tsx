@@ -1,4 +1,3 @@
-import { createRef, useRef } from "react";
 import { createStore } from "redux";
 
 const counter = (state = 0, action: { type: "INCREMENT" | "DECREMENT" }) => {
@@ -30,14 +29,10 @@ render()
 
 
 function LearnCounter() {
-    let pRef = useRef<number >()
-    if (!pRef.current) {
-        pRef.current = 0
-      }
-
+    
 	return (
 		<div >
-			<p id='counterValue' >{pRef.current}</p>
+			<p id='counterValue' ></p>
 			<button
 				onClick={() => {
 					store.dispatch({ type: "INCREMENT" });
